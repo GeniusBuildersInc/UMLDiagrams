@@ -1,0 +1,259 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Parkify",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "User Application",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class Diagram",
+					"documentation": "This page contains the basic information about the models which will be used in the program",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGGtZHc31of4zA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGGtZHc31ogeQk=",
+									"_parent": {
+										"$ref": "AAAAAAGGtZHc31of4zA="
+									},
+									"model": {
+										"$ref": "AAAAAAGGtZHc3lodYek="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGGtZHc4Fohlxw=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc31ogeQk="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGGtZHc4FoiDoo=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc31ogeQk="
+											},
+											"font": "Arial;13;1",
+											"left": 293,
+											"top": 159,
+											"width": 226.32568359375,
+											"height": 13,
+											"text": "User"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGGtZHc4FojGIU=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc31ogeQk="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 132.92626953125,
+											"height": 13,
+											"text": "(from User Application)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGGtZHc4Fok54E=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc31ogeQk="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 152,
+									"width": 236.32568359375,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGGtZHc4Fohlxw="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGGtZHc4FoiDoo="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGGtZHc4FojGIU="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGGtZHc4Fok54E="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGGtZHc4FoljBU=",
+									"_parent": {
+										"$ref": "AAAAAAGGtZHc31of4zA="
+									},
+									"model": {
+										"$ref": "AAAAAAGGtZHc3lodYek="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGtZIQClpK/aE=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGtZIQAVpHJ50="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 182,
+											"width": 226.32568359375,
+											"height": 13,
+											"text": "+uid: string {id, readOnly, unique}",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 177,
+									"width": 236.32568359375,
+									"height": 23
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGGtZHc4FomGqo=",
+									"_parent": {
+										"$ref": "AAAAAAGGtZHc31of4zA="
+									},
+									"model": {
+										"$ref": "AAAAAAGGtZHc3lodYek="
+									},
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 200,
+									"width": 236.32568359375,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGGtZHc4Fonj8s=",
+									"_parent": {
+										"$ref": "AAAAAAGGtZHc31of4zA="
+									},
+									"model": {
+										"$ref": "AAAAAAGGtZHc3lodYek="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGGtZHc4VooU9g=",
+									"_parent": {
+										"$ref": "AAAAAAGGtZHc31of4zA="
+									},
+									"model": {
+										"$ref": "AAAAAAGGtZHc3lodYek="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 288,
+							"top": 152,
+							"width": 236.32568359375,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAGGtZHc31ogeQk="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGGtZHc4FoljBU="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGGtZHc4FomGqo="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGGtZHc4Fonj8s="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGGtZHc4VooU9g="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGGtZHc3lodYek=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "User",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGtZIQAVpHJ50=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "uid",
+							"type": "string",
+							"isReadOnly": true,
+							"isUnique": true,
+							"isID": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAGGtZENsVoTj1k=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Database Design",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAGGtZENsVoUQGc=",
+					"_parent": {
+						"$ref": "AAAAAAGGtZENsVoTj1k="
+					},
+					"name": "Firebase ER Diagram"
+				}
+			]
+		}
+	],
+	"documentation": "This is a project aimed to create a seemless parking station system, which lets users to reserve parking spots seem lessly.",
+	"author": "Abhinav Belhekar",
+	"company": "Genius Builders Inc",
+	"copyright": "2023",
+	"version": "1"
+}
