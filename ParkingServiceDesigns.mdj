@@ -60,7 +60,7 @@
 											"font": "Arial;13;1",
 											"left": 293,
 											"top": 159,
-											"width": 226.32568359375,
+											"width": 407,
 											"height": 13,
 											"text": "User"
 										},
@@ -91,7 +91,7 @@
 									"font": "Arial;13;0",
 									"left": 288,
 									"top": 152,
-									"width": 236.32568359375,
+									"width": 417,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGGtZHc4Fohlxw="
@@ -128,17 +128,153 @@
 											"font": "Arial;13;0",
 											"left": 293,
 											"top": 182,
-											"width": 226.32568359375,
+											"width": 407,
 											"height": 13,
-											"text": "+uid: string {id, readOnly, unique}",
+											"text": "#uid: String {id, readOnly, unique}",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvNl9SUBwcmU=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvNl9PUBtNoU="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 197,
+											"width": 407,
+											"height": 13,
+											"text": "#phoneNo: String {id, readOnly, unique}",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvNpaEkB9dx4=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvNpaAkB6MEs="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 212,
+											"width": 407,
+											"height": 13,
+											"text": "#email: String = null",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvNtVCUCL9b4=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvNtVAUCIspA="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 227,
+											"width": 407,
+											"height": 13,
+											"text": "#GoogleSSO: String = null {id, readOnly, unique}",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvNvvDUCYAD8=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvNvvBkCV114="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 242,
+											"width": 407,
+											"height": 13,
+											"text": "+name: String = null",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvNw5FUChcAw=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvNw5DkCeaqU="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 257,
+											"width": 407,
+											"height": 13,
+											"text": "+photoUrl: String = null",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvOF17kDpSt4=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvOF15UDmfC4="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 272,
+											"width": 407,
+											"height": 13,
+											"text": "+current_gps_location: GeoLocation = 18.5204° N, 73.8567° E",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvOg820EinuU=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvOg81UEfzMA="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 287,
+											"width": 407,
+											"height": 13,
+											"text": "+saved_locations = [ ]",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGGvO9/y0GySl8=",
+											"_parent": {
+												"$ref": "AAAAAAGGtZHc4FoljBU="
+											},
+											"model": {
+												"$ref": "AAAAAAGGvO9/xEGvnFk="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 302,
+											"width": 407,
+											"height": 13,
+											"text": "+payment_options = [ ]",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 288,
 									"top": 177,
-									"width": 236.32568359375,
-									"height": 23
+									"width": 417,
+									"height": 143
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -151,8 +287,8 @@
 									},
 									"font": "Arial;13;0",
 									"left": 288,
-									"top": 200,
-									"width": 236.32568359375,
+									"top": 320,
+									"width": 417,
 									"height": 10
 								},
 								{
@@ -166,7 +302,9 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"width": 10,
+									"left": 288,
+									"top": 330,
+									"width": 417,
 									"height": 10
 								},
 								{
@@ -188,8 +326,8 @@
 							"containerChangeable": true,
 							"left": 288,
 							"top": 152,
-							"width": 236.32568359375,
-							"height": 58,
+							"width": 417,
+							"height": 201,
 							"nameCompartment": {
 								"$ref": "AAAAAAGGtZHc31ogeQk="
 							},
@@ -215,6 +353,7 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
 					"name": "User",
+					"documentation": "This is user class containing information about user",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -223,30 +362,121 @@
 								"$ref": "AAAAAAGGtZHc3lodYek="
 							},
 							"name": "uid",
-							"type": "string",
+							"documentation": "ID generated by firebase authentication",
+							"visibility": "protected",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
 							"isReadOnly": true,
 							"isUnique": true,
 							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvNl9PUBtNoU=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "phoneNo",
+							"documentation": "registered phone number",
+							"visibility": "protected",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
+							"isReadOnly": true,
+							"isUnique": true,
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvNpaAkB6MEs=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "email",
+							"documentation": "email id if provided by user either via google sso or manually",
+							"visibility": "protected",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
+							"defaultValue": "null"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvNtVAUCIspA=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "GoogleSSO",
+							"documentation": "Google Single Sign On if done",
+							"visibility": "protected",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
+							"isReadOnly": true,
+							"isUnique": true,
+							"defaultValue": "null",
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvNvvBkCV114=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "name",
+							"documentation": "Name Of User from either Google SSO or Manual Entry\n",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
+							"defaultValue": "null"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvNw5DkCeaqU=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "photoUrl",
+							"documentation": "Profile Pic URL from Google SSO",
+							"type": {
+								"$ref": "AAAAAAGGvO4IAkGk2C4="
+							},
+							"defaultValue": "null"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvOF15UDmfC4=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "current_gps_location",
+							"documentation": "Stores the current gps coordinates of user",
+							"type": {
+								"$ref": "AAAAAAGGvOKRO0D0+KI="
+							},
+							"defaultValue": "18.5204° N, 73.8567° E"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvOg81UEfzMA=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "saved_locations",
+							"documentation": "List of saved places. \n{name: string,  loc: GeoLocation}\n",
+							"defaultValue": "[ ]"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGGvO9/xEGvnFk=",
+							"_parent": {
+								"$ref": "AAAAAAGGtZHc3lodYek="
+							},
+							"name": "payment_options",
+							"defaultValue": "[ ]"
 						}
 					]
-				}
-			]
-		},
-		{
-			"_type": "ERDDataModel",
-			"_id": "AAAAAAGGtZENsVoTj1k=",
-			"_parent": {
-				"$ref": "AAAAAAFF+h6SjaM2Hec="
-			},
-			"name": "Database Design",
-			"ownedElements": [
-				{
-					"_type": "ERDDiagram",
-					"_id": "AAAAAAGGtZENsVoUQGc=",
-					"_parent": {
-						"$ref": "AAAAAAGGtZENsVoTj1k="
-					},
-					"name": "Firebase ER Diagram"
 				}
 			]
 		}
