@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>BookingReq</title>
+    <title>ParkingStation</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>BookingReq</h1>
+      <h1>ParkingStation</h1>
 
       <!-- Type and Stereotype -->
 
@@ -44,7 +44,7 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>User Application</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='36bff2fbd28474849ab2e76bce7c2e3e.html'><span class='node-icon staruml-icon icon-UMLClass'></span>BookingReq</a></span>
+          <span class="label label-info"><a href='31f37da7bb15a684d88781821844966b.html'><span class='node-icon staruml-icon icon-UMLClass'></span>ParkingStation</a></span>
         
       </section>
 
@@ -59,7 +59,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>This class contains information about Booking Request, how to form the request.</p>
+            <p>Class contains information about the parking station</p>
           
         </div>
       </section>
@@ -143,73 +143,66 @@
           </tr>
           
           <tr>
+            <td>protected</td>
+            <td><a href="41b15d78b63a25bc09fd77f78a28d4aa.html">parking_station_id</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
+            <td><p>The unique document id of the parking station document.</p></td>
+          </tr>
+          
+          <tr>
             <td>public</td>
-            <td><a href="f4f5896531499a9d0ac7fdcc324059a3.html">ticket_id</a></td>
+            <td><a href="f9f66ee962af442651039705f33fb697.html">access</a></td>
+            <td><a href='3e463c67ec7e9eea7f2c8f4ed38fe086.html'><span class='node-icon staruml-icon icon-UMLClass'></span>AccessControl</a> [1..*]</td>
+            <td><p>Stores list of users with different privilege levels of access.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c39e70b75931ba2018524e8994708d09.html">gps_location</a></td>
+            <td><a href='5c4d0624dbaf79122889199bf1a29d8c.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>GeoLocation</a> </td>
+            <td><p>The GPS coordinates of location.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2fa96e2fd34a24c3388f2f797a54b5db.html">name</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
+            <td><p>The name of parking station.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="0d76e3de19ecdba572fcdf3877db259b.html">description</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
+            <td><p>Description providing more insights to the parking station.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="570a3ab5e78238fd508f80b02b366cf7.html">contact_email</a></td>
             <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="5ab8882872a32620901ae9ee871cb0a9.html">parking_lot_id</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
+            <td><a href="7a612aba74d0fad43abe7831e033b6f3.html">contact_phone</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> [1..*]</td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="b89e6ab742fb65f74d4ca532449e99e9.html">parking_lot_floor</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
-            <td></td>
+            <td><a href="4d5dd97c771888d447ea6801dc4d2176.html">tags</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> [1..*]</td>
+            <td><p>Tags like any local crowded spots for instance mandai in pune</p></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="bb00dc1bf4859f84f229a95331541f7d.html">parking_lot_slot_number</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="305444dc50327fee8e7581470481dc82.html">start_time</a></td>
-            <td><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="57aaae8a069822518eca681fe010c96a.html">end_time</a></td>
-            <td><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="bfdfe57d5babcc83ec86497c19a756ed.html">vehicle</a></td>
-            <td><a href='b2212767593b26e1ef46dd9fd357d3d3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Vehicle</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="527939dc7a1b6fed5dc3097b2a9115c6.html">charges_per_hour</a></td>
-            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="bfe6ddcb889f9be1e3eb75e83ab20994.html">surge_charges</a></td>
-            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="b93a71c2d123494577259e3b551fc48a.html">taxes</a></td>
-            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
-            <td></td>
+            <td><a href="2deb2b757fdcd4b1a136db850c26e9c4.html">services</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> [1..*]</td>
+            <td><p>This will consists of different services provided like, insuarance, ev charging, lift etc.</p></td>
           </tr>
           
         </table>
@@ -316,7 +309,7 @@
     
     <tr>
         <td>name</td>
-        <td>BookingReq</td>
+        <td>ParkingStation</td>
     </tr>
     
     
@@ -419,32 +412,12 @@
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='cc75233887748906637a8c2c2a043517.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>Inherits (Transaction—BookingReq)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a></li>
-        
-        <li><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->

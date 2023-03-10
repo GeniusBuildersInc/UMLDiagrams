@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>BookingReq</title>
+    <title>ParkingSpot</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>BookingReq</h1>
+      <h1>ParkingSpot</h1>
 
       <!-- Type and Stereotype -->
 
@@ -44,7 +44,7 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>User Application</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='36bff2fbd28474849ab2e76bce7c2e3e.html'><span class='node-icon staruml-icon icon-UMLClass'></span>BookingReq</a></span>
+          <span class="label label-info"><a href='a92b53d4afe1d5304fdb9ac96999c7f5.html'><span class='node-icon staruml-icon icon-UMLClass'></span>ParkingSpot</a></span>
         
       </section>
 
@@ -59,7 +59,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>This class contains information about Booking Request, how to form the request.</p>
+            <p>This class represents the individual parking spot in the given parking station</p>
           
         </div>
       </section>
@@ -144,71 +144,50 @@
           
           <tr>
             <td>public</td>
-            <td><a href="f4f5896531499a9d0ac7fdcc324059a3.html">ticket_id</a></td>
+            <td><a href="f73f114e8c0404a3e489269153de3c96.html">id</a></td>
             <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
+            <td><p>The name of the id such as B12, A03 etc.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="bcdc4a5a8b2c8956b7fe6f67fd43e151.html">floor</a></td>
+            <td><a href='f551e204bc7032194087b306d608be58.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Integer</a> </td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="5ab8882872a32620901ae9ee871cb0a9.html">parking_lot_id</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="b89e6ab742fb65f74d4ca532449e99e9.html">parking_lot_floor</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="bb00dc1bf4859f84f229a95331541f7d.html">parking_lot_slot_number</a></td>
-            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="305444dc50327fee8e7581470481dc82.html">start_time</a></td>
-            <td><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="57aaae8a069822518eca681fe010c96a.html">end_time</a></td>
-            <td><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="bfdfe57d5babcc83ec86497c19a756ed.html">vehicle</a></td>
-            <td><a href='b2212767593b26e1ef46dd9fd357d3d3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Vehicle</a> </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="527939dc7a1b6fed5dc3097b2a9115c6.html">charges_per_hour</a></td>
+            <td><a href="27af36c5c9fdfa968be0e4b07db48d2a.html">length</a></td>
             <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
+            <td><p>length of the parking spot</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="77560e522b79b5c19e7d29c43c1dce4a.html">breadth</a></td>
+            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
+            <td><p>Breadth of parking spot</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9e4778f202a00dab7fc4728970c46a8b.html">suitableFor</a></td>
+            <td><a href='b4f0040545864062c184cbc6887a0bbd.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>String</a> [1..*]</td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="bfe6ddcb889f9be1e3eb75e83ab20994.html">surge_charges</a></td>
-            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
+            <td><a href="c4983fece8d52ba4a533c7596d192801.html">isCharginEnabled</a></td>
+            <td><a href='7cfbcbe8dd9e3c2ee8a78dacc8b23205.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Bool</a> </td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="b93a71c2d123494577259e3b551fc48a.html">taxes</a></td>
-            <td><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a> </td>
+            <td><a href="d581f091fe99a54794e68bb679edd1cf.html">isBlocked</a></td>
+            <td><a href='7cfbcbe8dd9e3c2ee8a78dacc8b23205.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Bool</a> </td>
             <td></td>
           </tr>
           
@@ -316,7 +295,7 @@
     
     <tr>
         <td>name</td>
-        <td>BookingReq</td>
+        <td>ParkingSpot</td>
     </tr>
     
     
@@ -419,15 +398,6 @@
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='cc75233887748906637a8c2c2a043517.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>Inherits (Transaction—BookingReq)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
@@ -438,9 +408,9 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='9e69c339578e1f4e3482ea3f5fb56f80.html'><span class='node-icon staruml-icon icon-UMLDataType'></span>DateTime</a></li>
+        <li><a href='f551e204bc7032194087b306d608be58.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Integer</a></li>
         
-        <li><a href='e77a3d5b2888b9e3f69a84e374c141c4.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Float</a></li>
+        <li><a href='7cfbcbe8dd9e3c2ee8a78dacc8b23205.html'><span class='node-icon staruml-icon icon-UMLPrimitiveType'></span>Bool</a></li>
         
     </ul>
 </section>
